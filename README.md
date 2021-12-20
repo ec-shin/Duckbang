@@ -13,28 +13,6 @@
 
 * ### Java, JavaScript, css, HTML
 
-## 목록 (List)
-
-* 순서가 없는 리스트입니다.
-  * 리스트1
-  * 리스트2
-  * 리스트3
-
-* 순서가 있는 리스트입니다.
-  1. 리스트1
-  2. 리스트2
-  3. 리스트3
-
-* 상위 리스트1
-  * 하위 리스트1
-  * 하위 리스트2
-    * 하위의 하위 리스트1
-    * 하위의 하위 리스트2
-
-* 리스트('*')
-+ 리스트('+')
-- 리스트('-')
-
 ## 코드 (Code)
 
 * 문장속 코드 `example code inline` 삽입 예시입니다.
@@ -53,7 +31,4 @@ example code box
 
 * 강조 문법 **강조된 부분** 예시입니다.
 
-## 이미지
-
-![예시 이미지](https://raw.githubusercontent.com/ByungJun25/Wiki/master/Markdown/example_image.jpg)
 
