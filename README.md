@@ -1,4 +1,4 @@
-# Duckbang
+## Duckbang Team Project
 
 ## 머리말 (Header)
   * # H1 입니다.
