@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duck.room.mapper.MapMapper">
+	<select id="getList" resultType="com.duck.room.dto.map.Location">
+		select o.o_id, l.l_xcordinate, l.l_ycordinate
+		from location l
+		inner join offering o
+		on l.l_code = o.l_code
+		inner join offering_detail od
+		on o.o_id = od.o_id
+		where od.od_room_kind in #{room_kind}
+	</select>
+	
+	<select id="getAllList" resultType="com.duck.room.dto.map.Location">
+		select o.o_id, l.l_xcordinate, l.l_ycordinate
+		from location l
+		inner join offering o
+		on l.l_code = o.l_code
+		inner join offering_detail od
+		on o.o_id = od.o_id
+		order by o.o_id
+	</select>
+	
+	<select id="getSummaryList" resultType="com.duck.room.dto.map.SummaryOffering">
+		select od.o_id, od_room_kind, od_private_area2, od_private_area, od_apply_floor, od_occupy_date, ok_code, ok_deposit, ok_month_of_payment, od_short_lease, image_1
+		from offering_detail od
+		inner join offering_kind ok
+		on od.o_id = ok.o_id
+		inner join image i
+		on od.o_id = i.o_id
+		where od.od_room_kind in #{room_kind}
+	</select>
+	
+	<select id="getAllSummaryList" resultType="com.duck.room.dto.map.SummaryOffering">
+		select od.o_id, od_room_kind, od_private_area2, od_private_area, od_apply_floor, od_occupy_date, ok_code, ok_deposit, ok_month_of_payment, od_short_lease, image_1
+		from offering_detail od
+		inner join offering_kind ok
+		on od.o_id = ok.o_id
+		inner join image i
+		on od.o_id = i.o_id
+		order by od.o_id
+	</select>
+
+</mapper>

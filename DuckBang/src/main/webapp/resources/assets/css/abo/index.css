@@ -1,0 +1,23 @@
+@charset "EUC-KR";
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.index_base {
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.index_base > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+}

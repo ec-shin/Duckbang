@@ -1,0 +1,116 @@
+@charset "UTF-8";
+#option_h1{
+    text-align:center;
+}
+
+#option_icon_area {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding: 0px 104px;
+}
+
+#option_icon_area > div {
+    width:162px;
+    height:70px;
+    margin-top: 40px;
+} 
+
+#option_icon_area > div > div {
+    margin:0px auto;
+}
+
+.option_icon_list > p {
+    text-align:center;
+    margin:0px;
+}
+
+#builtin{
+	width:40px;
+    height:40px;
+    background: url("../../icon/bidet.svg") no-repeat;
+}
+
+#aircondition{
+    width:40px;
+    height:40px;
+    background: url("../../icon/aircondition.svg") no-repeat;
+}
+
+#laundry{
+    width:40px;
+    height:40px;
+    background: url("../../icon/laundry.svg") no-repeat;
+}
+
+#bed{
+    width:40px;
+    height:40px;
+    background: url("../../icon/bed.svg") no-repeat;
+}
+
+#closet{
+    width:40px;
+    height:40px;
+    background: url("../../icon/closet.svg") no-repeat;
+}
+
+#tv{
+    width:40px;
+    height:40px;
+    background: url("../../icon/tv.svg") no-repeat;
+}
+
+#internet{
+	width:40px;
+    height:40px;
+    background: url("../../icon/gas.svg") no-repeat;
+}
+
+#interphone{
+    width:40px;
+    height:40px;
+    background: url("../../icon/security/videophone.svg") no-repeat;	
+}
+
+#shoes{
+    width:40px;
+    height:40px;
+    background: url("../../icon/shoes.svg") no-repeat;
+}
+
+#refrigerator{
+    width:40px;
+    height:40px;
+    background: url("../../icon/refrigerator.svg") no-repeat;
+}
+
+#induction{
+    width:40px;
+    height:40px;
+    background: url("../../icon/induction.svg") no-repeat;
+}
+
+#microoven{
+    width:40px;
+    height:40px;
+    background: url("../../icon/microoven.svg") no-repeat;
+}
+
+#doorlock{
+    width:40px;
+    height:40px;
+    background: url("../../icon/doorlock.svg") no-repeat;
+}
+
+#aircondition{
+    width:40px;
+    height:40px;
+    background: url("../../icon/aircondition.svg") no-repeat;
+}
+
+#aircondition{
+    width:40px;
+    height:40px;
+    background: url("../../icon/aircondition.svg") no-repeat;
+}

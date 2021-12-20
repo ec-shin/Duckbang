@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duck.room.mapper.InfoMapper">
+
+<select id="getPrice" resultType="com.duck.room.dto.info.InfoPrice">
+	SELECT * FROM offering_kind WHERE o_id=#{o_id}
+</select>
+
+<select id="getTop1" resultType="com.duck.room.dto.info.InfoTop1">
+	SELECT ok_code, ok_deposit, ok_month_of_payment, od_private_area, od_private_area2, ok_maintenance_cost, ok_parking_pee
+	FROM offering_kind, offering_detail WHERE offering_kind.o_id=#{o_id} AND offering_detail.o_id=#{o_id}
+</select>
+
+<select id="getTop2" resultType="com.duck.room.dto.info.InfoTop2">
+	SELECT realtor.r_id, r_business_name, r_name, r_address, r_business_license, r_business_phone
+	FROM realtor, offering WHERE offering.o_id=#{o_id} AND offering.r_id = realtor.r_id
+</select>
+
+<select id="getInfo" resultType="com.duck.room.dto.info.Info">
+	SELECT o_register_date, od_room_kind, od_whole_floor, od_apply_floor, od_private_area2, od_private_area, od_supply_area, od_room_count, od_bathroom_count, od_heating_kind, od_occupy_date, od_construction_use, od_use_approval_date, od_pet_possibility    
+	FROM offering, offering_detail 
+	WHERE offering_detail.o_id = #{o_id} AND offering.o_id = offering_detail.o_id
+</select>
+
+<select id="getImg" resultType="com.duck.room.dto.info.InfoImg">
+	SELECT * FROM image WHERE image.o_id=#{o_id}
+</select>
+
+<select id="getOption" resultType="com.duck.room.dto.info.InfoOption">
+	SELECT * FROM offering_option WHERE offering_option.o_id=#{o_id}
+</select>
+
+<select id="getSecurity" resultType="com.duck.room.dto.info.InfoSecurity">
+	SELECT * FROM offering_security WHERE offering_security.o_id=#{o_id}
+</select>
+
+<select id="getOther" resultType="com.duck.room.dto.info.InfoOther">
+	SELECT offering.r_id, offering.o_id, image_1, od_room_kind, ok_code, ok_deposit, ok_month_of_payment, od_apply_floor, od_private_area, ok_maintenance_cost, od_occupy_date 
+	FROM offering, image, offering_detail, offering_kind 
+	WHERE offering.r_id = #{r_id} AND offering.o_id = image.o_id AND offering.o_id = offering_detail.o_id AND offering.o_id = offering_kind.o_id
+</select> 
+
+</mapper>

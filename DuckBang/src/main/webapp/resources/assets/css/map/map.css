@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+#mapContainer {
+	width: 80%;
+}
+
+#map {
+  height: 100%;
+  width: 132%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  font-family: Roboto;
+  padding: 0;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#map_map {
+	width: 38%;
+	height: 8%;
+	background-color: white;
+	margin-top: 3%;
+	margin-left: 3%;
+	border: 1px solid #c8c8c8;
+}
+
+#pac-input {
+  width : 84%;
+  height: 27px;
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 13px;
+  border: 1px solid rgb(54, 101, 206);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.map_btn_div {
+	float: right;
+	background-color: rgb(54, 101, 206);
+	widht: 30px;
+	height: 30px;
+	overflow: hidden;
+	margin-top: 13px;
+	margin-right: 14px;
+}
+
+#map_btn {
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+	background: url("https://s.zigbang.com/www/images/ic_title_searchbar_30x30_nor_white.png") center center / 100% no-repeat transparent;
+	cursor: pointer;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+.custom-map-control-button {
+  border: 0;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background: url("https://s.zigbang.com/zigbang-www/_next/static/btn_content_map_mylocation_48x48_nor-937d5e5bfe06627d420be72442630a56.png") center center / 100% no-repeat transparent;
+}

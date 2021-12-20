@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duck.room.mapper.AboMapper">
+	<select id="getInfo" resultType="com.duck.room.dto.abo.AboInfo">
+		SELECT * FROM realtor WHERE r_id = #{r_id}
+	</select>
+	
+	<select id="getRoom" resultType="com.duck.room.dto.abo.AboRoomList">
+		SELECT offering.o_id, image_1, od_room_kind, ok_code, ok_deposit, ok_month_of_payment, od_apply_floor, od_private_area, ok_maintenance_cost, od_occupy_date  
+		FROM realtor, offering, image, offering_kind, offering_detail 
+		WHERE offering.r_id=realtor.r_id AND offering.r_id=#{r_id} AND offering.o_id=image.o_id AND offering.o_id=offering_kind.o_id AND offering.o_id=offering_detail.o_id
+	</select>
+</mapper>

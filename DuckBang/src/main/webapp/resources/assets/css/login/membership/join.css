@@ -1,0 +1,151 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+.membership_container{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 120px 0px;
+}
+.membership_content{
+
+	display: flex;
+    flex-direction: column;
+    width: 588px;
+    margin: 0px auto;
+    padding: 64px;
+    border: 1px solid rgb(245, 245, 245);
+}
+.membership_content > h1{
+	padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    font-weight: 700;
+}
+.membership_content > h2{
+		margin-top: -25px;
+	padding: 32px 0px 48px;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.membership_label{
+	display: inline-flex;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.membership_label_input{
+	margin: 0px 4px 0px 0px;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    user-select: text;
+}
+.membership_label_text{
+	font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.membership_agree{
+	display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 16px 0px;
+    border-top: 1px solid rgb(245, 245, 245);
+}
+.membership_agree > div.membership_agree_check{
+	display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+.membership_agree label{
+    width: 100%;
+}
+.membership_agree_label {
+	display: inline-flex;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.membership_agree_label_text{
+	font-size: 14px;
+    line-height: 24px;
+}
+.membership_agree > div.membership_agree_check + div{
+	margin-top: 16px;
+}
+.membership_agree_check > i{
+	cursor: pointer;
+	font-size: 23px;
+	color: rgb(151, 151, 151);
+}
+.membership_info{
+	margin-bottom: 20px;
+}
+.membership_info_text {
+	margin-top: -10px;
+	font-size: 12px;
+    line-height: 20px;
+    color: rgb(151, 151, 151);
+}
+.membership_info_text > a{
+	color: rgb(50, 108, 249);
+	outline: none;
+	text-decoration: none;
+    cursor: pointer;
+}
+.membership_btn{
+	border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(223, 223, 223);
+    cursor: default;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 0px 16px;
+    font-weight: 700;
+    vertical-align: middle;
+    transition: all 150ms ease-out 0s;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    height: 56px;
+    flex: 0 0 auto;
+    margin: 0px;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+.membership_btn > span{
+	height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 0 0 auto;
+    display: block;
+    position: relative;
+}

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+.member_info_container{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 120px 0px;
+}
+.member_info_content{
+	display: flex;
+    flex-direction: column;
+    width: 588px;
+    margin: 0px auto;
+    padding: 64px;
+    border: 1px solid rgb(245, 245, 245);
+}
+.member_info_content > h1{
+	padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    font-weight: 700;
+}
+.member_info_content > h2{
+	margin-top: -40px;
+	padding: 32px 0px 48px;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+}
+.member_info_id{
+	display: inline-flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.member_info_label{
+	display: inline-flex;
+    flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+}
+.member_info_label > p.member_info_text{
+	margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+.member_info_input{
+	width: 460px;
+    height: 44px;
+    padding: 10px 16px;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 150ms ease-out 0s;
+    outline: none;
+    user-select: text;
+}
+.member_info_pw{
+	display: inline-flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.member_info_btn{
+	margin-top: 32px;
+	border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(223, 223, 223);
+    cursor: default;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 0px 16px;
+    font-weight: 700;
+    vertical-align: middle;
+    transition: all 150ms ease-out 0s;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    height: 56px;
+    flex: 0 0 auto;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+.member_info_btn > span{
+	height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 0 0 auto;
+    display: block;
+    position: relative;
+}

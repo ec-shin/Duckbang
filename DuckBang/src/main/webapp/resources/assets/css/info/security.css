@@ -1,0 +1,62 @@
+@charset "UTF-8";
+#security_h1{
+    text-align:center;
+}
+
+#security_icon_area {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding: 0px 104px;
+}
+
+#security_icon_area > div{
+    width:162px;
+    height:70px;
+    margin-top: 40px;
+}
+
+.security_icon_list > p {
+    text-align:center;
+    margin:0px;
+}
+
+#security_icon_area > div > div {
+    margin:0px auto;
+}
+ 
+#joint_entrance{
+	width:40px;
+    height:40px;
+    background: url("../../icon/security/entrance.svg") no-repeat;
+}
+ 
+#cardkey{
+    width:40px;
+    height:40px;
+    background: url("../../icon/security/cardkey.svg") no-repeat;
+}
+
+#cctv{
+    width:40px;
+    height:40px;
+    background: url("../../icon/security/cctv.svg") no-repeat;
+}
+
+#firealarm{
+    width:40px;
+    height:40px;
+    background: url("../../icon/security/firealarm.svg") no-repeat;
+}
+
+#videophone{
+    width:40px;
+    height:40px;
+    background: url("../../icon/security/videophone.svg") no-repeat;
+}
+
+#windowguard{
+    width:40px;
+    height:40px;
+    background: url("../../icon/security/windowguard.svg") no-repeat;
+}

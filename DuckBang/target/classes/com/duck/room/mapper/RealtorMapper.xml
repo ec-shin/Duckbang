@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duck.room.mapper.RealtorMapper">
+
+<insert id="addImage" parameterType="com.duck.room.dto.realtor.Image">
+	insert into image values(#{o_id},#{image_1},#{image_2},#{image_3},#{image_4},#{image_5})
+</insert>
+
+<insert id="addLocation" parameterType="com.duck.room.dto.realtor.Location">
+	insert into location values(#{l_code},#{l_xcordinate},#{l_ycordinate})
+</insert>
+
+<insert id="addOffering" parameterType="com.duck.room.dto.realtor.Offering">
+	insert into offering values(#{o_id},#{o_approval_state},#{o_register_date},#{r_id},#{l_code})
+</insert>
+
+<insert id="addKind" parameterType="com.duck.room.dto.realtor.OfferingKind">
+	insert into offering_kind values(#{o_id},#{ok_code},#{ok_deposit},#{ok_maintenance_cost},#{ok_month_of_payment},#{ok_parking_pee},#{od_short_lease})
+</insert>
+
+<insert id="addDetail" parameterType="com.duck.room.dto.realtor.OfferingDetail">
+	insert into offering_detail values(
+	#{o_id},#{od_room_kind},#{od_whole_floor},#{od_apply_floor},#{od_private_area2},#{od_private_area},
+	#{od_supply_area},#{od_room_count},#{od_bathroom_count},#{od_heating_kind},#{od_occupy_date},#{od_construction_use},
+	#{od_use_approval_date},#{od_pet_possibility})
+</insert>
+
+<insert id="addOption" parameterType="com.duck.room.dto.realtor.OfferingOption">
+	insert into offering_option values(
+	#{o_id},#{oo_builtin},#{oo_induction},#{oo_washing_machine},#{oo_microwave},
+	#{oo_refrigerator},#{oo_aircon},#{oo_tv},#{oo_internet},#{oo_interphone},
+	#{oo_shoe_rack},#{oo_closet},#{oo_bed},#{oo_doorlock})
+</insert>
+
+<insert id="addSecurity" parameterType="com.duck.room.dto.realtor.OfferingSecurity">
+	insert into offering_security values(
+	#{o_id},#{s_videophone},#{s_joint_entrance},#{s_cctv},#{s_cardkey},#{s_windowguard})
+</insert>
+
+<select id="getLcode" resultType="int">
+	select max(to_number(l_code)) from location order by to_number(l_code) asc
+</select> 
+
+<select id="getOid" resultType="int">
+	select max(o_id) from offering order by o_id asc
+</select> 	
+
+</mapper>

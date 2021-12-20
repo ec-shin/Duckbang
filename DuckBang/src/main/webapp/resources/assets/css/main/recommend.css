@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#recommend_wrap{
+	margin-top: 80px;
+	width: 85%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+#recommend_title{
+	font-size: 25px;
+	height: 15%;
+	margin-bottom:20px;
+}
+
+#recommend_subTitle {
+	height: 15%;
+	display: flex;
+}
+
+.recommend_option {
+	border: 1px solid #868686;
+	font-size: 14px;
+	width: auto;
+	margin-left:10px;
+	color: #868686;
+	float: left;
+	padding: 7px;
+}
+
+#recommend_moreRoom{
+	font-size: 14px;
+	color: #868686;
+	margin-left: auto;
+}
+
+#recommend_moreRoom > a{
+	text-decoration: none;
+	color: black;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duck.room.mapper.MainMapper">
+<select id="getRecommendList" resultType="com.duck.room.dto.main.Recommend">
+	SELECT offering.o_id, image_1, od_room_kind, ok_code, ok_deposit, ok_month_of_payment, od_apply_floor, od_private_area, ok_maintenance_cost, od_occupy_date 
+	FROM offering, image, offering_detail, offering_kind 
+	WHERE offering.o_id = image.o_id AND offering.o_id = offering_detail.o_id AND offering.o_id = offering_kind.o_id ORDER BY dbms_random.random
+</select>
+</mapper>

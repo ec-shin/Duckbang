@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+
+
+.css-search1{
+	-webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-basis: auto;
+    -webkit-flex-direction: column;
+    -webkit-flex-shrink: 0;
+    align-items: stretch;
+    border: 0 solid black;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    z-index: 0;
+}
+
+.css-search1-1{	
+	border: 0 solid black;
+    box-sizing: border-box;
+    color: rgba(0,0,0,1.00);
+    display: inline;
+    line-height: inherit;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.css-search_option{	
+	border: 0 solid black;
+    box-sizing: border-box;
+    color: rgba(0,0,0,1.00);
+    line-height: inherit;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;	
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.css-input_text{
+	height: 60px;
+    font-size: 16px;
+    border-width: 0px;
+    background-color: rgb(242, 242, 242);
+    line-height: 1.5;
+    font-family: SpoqaHanSans;
+    outline: none;
+}
+
+.h01_bg{	
+	position: relative;
+	width: 100%;
+	height: 524px;
+	top: 90px;
+	margin: 0 auto;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	background-size: 1979px 524px;
+	background-image: url("../../img/back1.png");
+	background-repeat: no-repeat;
+}
+
+
+.h01_slide{	
+	width: 942px;
+	height: 340px;
+	padding-top: 156px;
+	background-image: url("../../img/blur.png");
+	background-size: contain;	
+}
+
+.h01_slide-1{	
+	width: 684px;
+    height: 46px;
+    text-shadow: rgb(255 255 255) 0px 16px 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin: 0px auto;
+    cursor: default;
+    
+}
+
+.h01_searchBar{	
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;   
+}
+
+.h01_searchBar-1{	
+	display: flex;
+    flex-direction: column;
+    width: 574px;
+    height: 196px;
+}
+
+.h01_searchBar-1_options{	
+	flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 8px;
+    margin-bottom: 26px;
+    
+}
+
+.h01_searchBar-1_point{
+	width: 143px;
+    height: 50px;
+    background-image: url("../../img/cloud.png");
+    background-size: cover;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    padding-top: 8px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.2s ease-in 0s;
+    left: 0px;
+}
+
+.h01_searchBar-1_option{
+	display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+.option_name{
+	font-size: 17px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    padding-top: 8px;
+    z-index: 10;
+}
+
+#apt{
+	font-weight: 800;
+	color: #2D60A3;
+}
+
+.h01_searchBar-2{
+	background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.searchBar-input{
+	width: 508px;
+	padding-top: 17px;
+	padding-right: 28px;
+	padding-left: 29px;
+	padding-bottom: 19px;
+	height: 60px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	background-color: rgba(242,242,242,1.00);
+}
+
+.searchBar-icon{
+	z-index: 99;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 66px;
+    height: 60px;
+    border: 0px;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 0px 8px 8px 0px;
+    padding: 13px 18px 15px 20px;
+    cursor: pointer;
+}
+
+.icon-style{
+	width: 28px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.searchBar-icon_01{
+	    top: 0px;    
+	    right: 0px;
+	    position: absolute;
+	    left: 0px;   
+	    bottom: 0px;
+	    background-color: rgba(0,0,0,0.00);
+}

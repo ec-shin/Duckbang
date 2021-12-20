@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#mapMainBody {
+	display: flex;
+	flex-direction: column;
+}
+
+#mapMainContainer {
+	display: flex;
+	flex-direction: row;
+}

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.index_base {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.index_base > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+#menubar_area {
+	height:62px;
+	background-color:white;
+    border-top: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  	position: sticky;
+  	top: 0;
+  	z-index: 3;
+}
+
+#content_area {
+    width: 1200px;
+    margin: 0px auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#price_area {
+	padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#option_area {
+    border-top: 1px solid rgb(221, 221, 221);
+    align-items:center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#security_area {
+	border-top: 1px solid rgb(221, 221, 221);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

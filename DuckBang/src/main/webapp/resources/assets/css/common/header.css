@@ -1,0 +1,248 @@
+
+@charset "UTF-8";
+
+.user_menu{
+	max-width: 216px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgb(238, 238, 238);
+    padding: 5px 24px 6px 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#header_area_top_menu{
+	margin-top:20px;
+}
+#header_area {
+   height:90px;
+   border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+#header_area_small {
+   font-size: 11px;
+}
+
+#oneroom > #header_area_small{
+	margin-left: 3px;
+}
+
+#header_area_top_menu > li {
+   display: block;
+   float: left;
+   font-size:20px;
+   font-weight:800;
+   line-height: 0.73;
+   width: 160px;
+   margin-top:10px;
+   cursor: pointer;
+}
+
+#office{
+	margin-left: 20px;
+}
+
+#header_area_top_menu > li:nth-child(3) {
+   width:70px;
+}
+
+
+#header_area_top_menu > li:hover {
+   /*color: orange;*/
+   color: rgb(6, 73, 192);
+   /*background-color: red;*/
+}
+
+#header_area > span {
+   color:black;
+   font-size: 50px;
+}
+
+#header_area > #navi_flex {
+   display:flex;
+}
+
+
+#header_area_logo {
+   background: url("../../img/logo.png") no-repeat; 
+   background-size:60%;
+   width:130px;
+   height:90px;
+   z-index:1; 
+   margin-left:35px;
+   margin-right:-25px;
+   margin-top:3px;
+}
+
+/* #logo:hover {
+   color: red;
+} */
+
+.header_area_sub_menu {
+   visibility: hidden;
+   /*border: 1px solid red;*/
+   font-size: 10px;
+}
+
+#header_area_my_div {
+   background: green;
+   width: 100px;
+}
+
+#navi_flex > #login_area {
+   align: right;
+   
+}
+
+#navi_flex > #login_area > #login {
+   color:red;
+   border:solid 1px black;
+}
+
+#login_area { 
+   /*
+   border: 1px solid black;
+   */
+   margin-left: auto;
+   margin-top: 30px;
+}
+
+#login_area > .login_btn {
+   /*vertical-align: middle;   
+   border-radius:7px;
+   margin-top:24px;
+   margin-right:20px;
+   height:35px;*/
+   min-width: 106px;
+   height: 30px;
+   border-radius: 4px;
+   background-color: rgb(238, 238, 238);
+   padding: 5px 8px 6px;
+   display: inline-block;
+   font-size: 12px;
+   color: rgb(34, 34, 34);
+   position: relative;
+   text-align: center;
+   box-sizing: border-box;
+   border: 1px solid rgb(225, 225, 225);
+   background: transparent;
+   outline: none;
+   cursor: pointer !important;
+   font-family: "SpoqaHanSans";
+}
+   
+
+#seller_join {
+   
+   padding-left:10px;
+   padding-right:10px;
+}
+
+#seller_join:hover {
+   background-color: #e2e2e2;
+   color:green;
+}
+
+#seller_join_inner {
+   margin-top: 23px;
+   margin-right: 8px;
+   font-weight: 800;
+   color: #1467e5;
+   font-size: 16px;
+   text-align: right;
+   line-height: 20px;
+   cursor: pointer;
+}
+
+.user_menu{
+	border:none;
+	border:0px;
+	margin:0px;
+	padding:0px;
+	font: "sans-serif";
+	font-size:18px;
+}
+
+.user_menu ul{
+	height:70px;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.user_menu li{
+	float:left;
+	padding:0px;
+	color:#ffffff;
+}
+
+.user_menu li a{
+	background: #ffffff;
+	color:#000000;
+	display:block;
+	line-height:30px;
+	margin:0px;
+	text-align:center;
+	text-decoration:none;
+}
+
+.user_menu li a:hover, .user_menu ul li:hover a{
+	background: rgb(171,171,171);
+	color:#000000;
+	text-decoration:none;
+}
+
+.user_menu li ul{
+	background: #ffffff;
+	display:none; 
+	height:auto;
+	border:0px;
+	position:absolute;
+	width:200px;
+	z-index:200;
+/*top:1em;
+/*left:0;*/
+}
+
+.user_menu li:hover ul{
+display:block;
+}
+
+.user_menu li li {
+background: #ffffff;
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+
+.user_menu li:hover li a{
+background:none;
+}
+
+.user_menu li ul a{
+background: #ffffff;
+display:block;
+height:30px;
+font-size:14px;
+margin:0px;
+text-align:left;
+}
+
+.user_menu li ul a:hover, .user_menu li ul li:hover a{
+background: rgb(171,171,171);
+border:0px;
+color:#000000;
+text-decoration:none;
+margin-right: 20px;
+}
+
+.user_menu p{
+clear:left;
+}
+
+#current{
+	color: black;
+	margin: 1px;
+}

@@ -1,0 +1,721 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+
+.realtor_header{
+	width: 100%;
+    flex: 0 0 auto;
+}
+
+.realtor_header > div{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+	width: 1200px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.realtor_title_ul{
+	flex: 0 0 auto;
+    display: flex;
+    width: 1180px;
+    height: 48px;
+    margin: 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    list-style: none;
+}
+
+.realtor_title_ul > li{
+	-webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.realtor_title_ul > li > a.realtor_title_active{
+	color: rgb(34, 34, 34);
+	border-top-width: 2px;
+	border-bottom: 2px solid rgb(34, 34, 34);
+}
+
+.realtor_title_ul > li > a{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid transparent;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.realtor_container{
+	width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.realtor_container > div{
+	width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.realtor_box{
+	width: 100%;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 5%) 0px 1px 5px 0px;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.realtor_box > h1{
+	height: 60px;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    position: relative;
+    margin: 0px;
+}
+
+.realtor_box > table{
+	width: 100%;
+	border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.realtor_box > table tr{
+	height: 70px;
+}
+
+.realtor_box > table th{
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(249, 249, 249);
+    vertical-align: middle;
+}
+
+.realtor_box > table th > span{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.realtor_box_td{
+	vertical-align: middle;
+}
+
+.realtor_box_ul{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.realtor_box_ul > li{
+	flex: 0 0 auto;
+	margin-left: 10px;
+}
+
+.realtor_box_label{
+	display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.realtor_box_label > input[type="radio"]{
+	width: 0px;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    user-select: text;
+}
+
+.realtor_box_label > input[type="radio"]:checked + p{
+	color: rgb(255, 255, 255);
+    border-color: rgb(50, 108, 249);
+    background-color: rgb(50, 108, 249);
+}
+
+.realtor_box_label > p{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 82px;
+    height: 46px;
+    padding: 0px 15px;
+    font-size: 14px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.realtor_address{
+	display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.realtor_address_1{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.realtor_address_2{
+	width: 60%;
+    height: 330px;
+    border: 1px solid rgb(221, 221, 221);
+    position: relative;
+}
+
+.realtor_ok_code{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.realtor_ok_code > button{
+	width: 100px;
+    height: 40px;
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    margin-right: 5px;
+}
+
+.realtor_short_lease{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.realtor_short_lease > input[type="checkbox"]{
+	margin: 0px;
+    border: 1px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    outline: none;
+    user-select: text;
+}
+
+.realtor_short_lease > p{
+	margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+}
+
+.realtor_ok_code_text{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+}
+
+.realtor_ok_code_text > i{
+	margin-right: 5px;
+	color: gray;
+}
+
+.realtor_area{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.realtor_area_p{
+	margin-right: 10px;
+    font-size: 15px;
+    color: rgb(34, 34, 34);
+    line-height: 46px;
+}
+
+.realtor_area_div{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.realtor_area_input{
+	padding: 0px 16px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    height: 46px;
+}
+
+.realtor_area_p2{
+	width: 30px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.realtor_floor{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.realtor_floor_p{
+	margin-right: 10px;
+    font-size: 15px;
+    color: rgb(34, 34, 34);
+    line-height: 46px;
+}
+
+.realtor_heating{
+	height: 46px;
+    padding: 0px 8px 0px 10px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    box-sizing: border-box;
+    outline: none;
+    appearance: none;
+    width: 180px;
+}
+
+.realtor_date{
+	padding: 0px 16px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 180px;
+    height: 46px;
+    margin-left: 20px;
+}
+
+.realtor_maintenance{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1028px;    
+    padding: 12px 20px;
+    position: relative;
+}
+
+.maintenance_input{
+	padding: 0px 16px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    height: 46px;
+}
+
+.maintenance_p{
+	width: 30px;
+    margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.maintenance_div{
+	display: flex;
+}
+
+.maintenance_label{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.maintenance_label > input[type="checkbox"]{
+	margin: 0px;    
+	border: 1px solid;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 18px;
+    height: 15px;
+    outline: none;
+    user-select: text;
+}
+
+.maintenance_label > p{
+	margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    width: 80px;
+}
+
+.realtor_option{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 1028px;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.option_label{
+	display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.option_label > input[type="radio"]{
+	width: 0px;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    user-select: text;
+}
+
+.option_label > input[type="radio"]:checked + p{
+	color: rgb(255, 255, 255);
+    border-color: rgb(50, 108, 249);
+    background-color: rgb(50, 108, 249);
+    margin-right: 7px;
+}
+
+.option_label > p{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 82px;
+    height: 46px;
+    padding: 0px 15px;
+    font-size: 14px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 3px;
+    user-select: none;
+}
+
+.option_parking_input{
+	margin-left: 10px;
+	padding: 0px16px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    height: 46px;
+	outline: none;
+	user-select: text;
+	appearance: none;
+}
+
+.option_parking_p{
+	width: 30px;
+    margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.realtor_option_td{
+	background-color: white;
+}
+
+.realtor_end{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0px 150px;
+}
+
+.realtor_end_label{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.realtor_end_label > input[type="checkbox"]{
+	margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.realtor_end_label > p{
+	margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+}
+
+.realtor_end_div{
+	margin-top: 30px;
+    text-align: center;
+}
+
+.realtor_cancel{
+	color: rgb(34, 34, 34);
+    font-size: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    width: 160px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.realtor_add{
+	color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: 0px;
+    background-color: rgb(26, 90, 232);
+    margin-left: 12px;
+    width: 160px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.realtor_month_div{
+	display: flex;
+    flex-direction: column;
+    padding: 12px 20px;
+    position: relative;
+}
+.realtor_month_div2{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 46px;
+}
+.realtor_month_p{
+	width: 50px;
+    height: 26px;
+    margin-right: 10px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgb(97, 182, 229);
+}
+.realtor_month_input{
+	padding: 0px 16px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 140px;
+    height: 100%;
+    outline: none;
+    user-select: text;
+    appearance: none;
+}
+.realtor_month_p2{
+	width: 20px;
+    height: 46px;
+    color: rgb(34, 34, 34);
+    font-size: 16px;
+    text-align: center;
+    line-height: 46px;
+}
+.realtor_month_p3{
+	margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    line-height: 46px;
+}
+.realtor_month_p3 > span{
+	margin-left: 10px;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+}
+.realtor_month_div2 > button{
+	width: 25px;
+    height: 25px;
+    margin-left: 350px;
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    background-color: rgb(102, 102, 102);
+    position: relative;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.room_deposit_contain{
+	display: flex;
+    flex-direction: column;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.room_deposit_div{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 46px;
+}
+
+.room_deposit_p1{
+	width: 50px;
+    height: 26px;
+    margin-right: 10px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgb(97, 182, 229);
+}
+.room_deposit_input{
+	padding: 0px 16px;
+    color: rgb(76, 76, 76);
+    font-size: 14px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 140px;
+    height: 100%;
+    outline: none;
+	user-select: text;
+	appearance: none;
+}
+
+.room_deposit_p2{
+	margin-left: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    line-height: 46px;
+}
+
+.room_deposit_p2 > span {
+	margin-left: 10px;
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+}
+
+.room_deposit_div > button{
+	width: 25px;
+    height: 25px;
+    margin-left: 500px;
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    background-color: rgb(102, 102, 102);
+    position: relative;
+    padding: 0px;
+    cursor: pointer;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.imageInput{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.realtor_address_1 > input{
+
+	width: 90%;
+}
+
+#map{
+	width: 100%;
+	height: 100%;
+}
+
+.realtor_address_1 > p{
+	margin-top: 40px;
+}
+
+.realtor_box > table > th{
+	border: solid 1px black;
+}

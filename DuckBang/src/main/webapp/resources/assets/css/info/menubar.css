@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+    .menubar {
+        width: 1200px;
+        font-size: 15px;
+        margin: 0px auto;
+        display: flex;
+        height: 40px;
+    }
+
+    .menubar_content {
+        /* border: 1px solid red; */
+        justify-content: center;
+        color: gray;
+        flex: 1 1 0px;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+    } 
+
+    .menubar_content:hover {
+        color: black;
+    }

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+
+.login_container{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 120px 0px;
+}
+
+.login_form{
+	display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding: 64px;
+    border: 1px solid rgb(245, 245, 245);
+}
+
+.login_form > h1 {
+	margin-top: -5px;
+	padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    font-weight: 700;
+}
+
+.login_form > h2 {
+	margin-top: -10px;
+	padding: 32px 0px 48px;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.login_form_id{
+	display: inline-flex;
+    flex-direction: column;
+   	margin-top: -20px;
+    margin-bottom: 24px;
+}
+
+.login_form_label{
+	display: inline-flex;
+    flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+}
+
+.login_form_label > p.login_form_text{
+	margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.login_form_input{
+	width: 460px;
+    height: 44px;
+    padding: 10px 16px;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 150ms ease-out 0s;
+    outline: none;
+    user-select: text;
+    appearance: none;
+}
+
+.login_form_pw{
+	display: inline-flex;
+    flex-direction: column;
+   	margin-top: -20px;
+    margin-bottom: 16px;
+}
+
+.login_form_idSaved{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 24px;
+    margin-bottom: 32px;
+}
+
+.login_form_idSaved_label{
+	display: inline-flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.login_form_idSaved_input{
+	margin: 0px 4px 0px 0px;
+    border: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    user-select: text;
+}
+
+.login_form_idSaved_text{
+	color: rgb(151, 151, 151);
+	font-size: 14px;
+}
+
+.login_form_membership{
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.login_form_membership > p{
+	cursor: pointer;
+	font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.login_form_membership > span{
+	margin-left: 8px;
+    margin-right: 8px;
+    width: 1px;
+    height: 12px;
+    background-color: rgb(223, 223, 223);
+}
+
+.login_form_btn {
+	display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 80px;
+    padding: 0px 16px;
+    font-weight: 700;
+    vertical-align: middle;
+    transition: all 150ms ease-out 0s;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    height: 56px;
+    flex: 0 0 auto;
+    margin: 0px;
+    outline: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: 30px;
+}
+
+.login_form_btn > span{
+	height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    flex: 0 0 auto;
+    display: block;
+    position: relative;
+}
+
+#txt_area {
+	padding
+}
+
+#txt_area > p{
+	text-align: center;
+    font-weight: 800;
+    line-height: 10px;
+}
+
+#welcome_btn {
+	background-color:#E6a055;
+}
+
+
+

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+::-webkit-scrollbar {
+width: 14px;
+}
+::-webkit-scrollbar-track {
+background-color: rgba(0, 0, 0, 0.65);
+}
+::-webkit-scrollbar-thumb {
+background-color: rgb(221, 221, 221);
+}
+
+#listContainer {
+   visibility: hidden;
+   width: 23%;
+}
+
+#list_room_infos {
+	height:567px;
+	overflow-y: scroll;
+	border: 1px solid #ddd7d7;
+	background-color: rgb(238, 238, 238);
+	flex: 1 1 0%;
+}
+
+#list_area {
+   display: flex;
+   flex-direction: row;
+}
+
+#list_count {
+   padding: 5px;
+   width: 60%;
+   font-size: 20px;
+   font-weight: normal;
+   margin-left: 10px;
+    line-height: 50px;
+}
+
+#list_option_code{
+	margin-top: 5%;
+	width: 32%;
+}
+
+#list_code_select{
+	width: 	55%;
+}
+
+#list_unit_box {
+   margin-left: 13px;
+}
+
+.list_info_a {
+   text-decoration: none;
+   color: black;
+}
+
+.list_class_info:hover {
+	background-color: #c8c8c8;
+	cursor: pointer;
+}
+
+.list_class_info {
+   display: flex;
+   padding: 15px 10px;
+   background-color: white;
+   border-bottom: 1px solid #ddd7d7;
+}
+
+.list_unit_btn{
+   border-radius: 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 13px;
+    overflow-y: hidden;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icon/unit_change.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.no_list_info {
+   align-items: center;
+   flex: 1 1 0%;
+   height: 100%;
+   justify-content: center;
+   padding-bottom: 0px;
+   width: 100%;
+   -webkit-box-align: center;
+   -webkit-box-pack: center;
+}
+
+.no_list_image_div {
+   flex-basis: auto;
+   height: 80px;
+   overflow: hidden;
+   width: 80px;
+   z-index: 0;
+   padding-top: 60%;
+   padding-left: 36%;
+}
+
+.no_list_image {
+   background-color: rgba(0, 0, 0, 0);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   inset: 0px;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background-image: url("https://s.zigbang.com/zigbang-www/_next/static/ic_content_empty_80x80_nor_black-9e3c3d25133e09206a1fc4e453804dc4.png");
+}
+
+.no_list_text1 {
+   margin-top: 10px;
+   line-height: 28px;
+   font-size: 19px;
+   letter-spacing: 0px;
+   font-style: normal;
+   text-align: center;
+   font-weight: bold;
+}
+
+.no_list_text2 {
+   margin-top: 5px;
+   letter-spacing: 0px;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 21px;
+   text-align: center;
+}
+
+#paging {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+#paging > a{
+   font-size: 20px;
+   margin-right: 10px;
+}
+
+.list_room_info {
+   display: flex;
+   flex-direction: row;
+   padding: 10px;
+   border-bottom: 1px solid gray;
+   width: 330px;
+}
+
+.list_room_image_div {
+	position: relative;
+}
+
+.list_room_image {
+   width: 140px;
+   height: 120px;
+   z-index: 1;
+}
+
+.list_room_image_btn_div {
+	position: absolute;
+	z-index: 2;
+	top: 21px;
+	right: 183px;
+}
+
+.list_only_btn_div {
+	position: relative;	
+}
+
+.list_room_image_btn {
+	background-color: transparent;
+	width: 27px;
+	height: 24px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.list_room_info:hover {
+   background-color: #c8c8c8;
+   cursor: pointer;
+}
+
+.room_info {
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+.list_room_reco_sort {
+   display: flex;
+   flex-direction: row;
+   width: 74%;
+   height: 18%;
+}
+
+.list_room_sort {
+   font-size: 12px;
+   padding: 1%;
+   border: 1px solid black;
+}
+
+.list_room_type {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.list_room_size {
+   font-size: 14px;
+}
+
+.list_room_occupy_date {
+   font-size: 14px;   
+}
+
+.list_room_area {
+   font-size: 14px;
+}
+
+.list_room_lease {
+   font-size: 14px;
+}
