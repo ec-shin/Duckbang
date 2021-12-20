@@ -17,8 +17,7 @@
 
 ## PPT
 
-* <https://www.github.com>
-* [Github](https://www.github.com)
+* [Github](https://github.com/ec-shin/Duckbang/blob/main/Duckbang.pdf)
 
 
 
