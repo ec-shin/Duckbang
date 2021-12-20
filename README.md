@@ -1,6 +1,4 @@
 ## Duckbang Team Project
-
-## 수평선 (Horizon)
   
 ***
 
